@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class='bx bxs-bolt-circle'></i>
+                <span>DevDash</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active"><i class='bx bxs-dashboard'></i> Dashboard</a>
+                <a href="#"><i class='bx bx-bar-chart-alt-2'></i> Analytics</a>
+                <a href="#"><i class='bx bx-wallet'></i> Payments</a>
+                <a href="#"><i class='bx bx-cog'></i> Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+    <div class="search-box">
+        <i class='bx bx-search'></i>
+        <input type="text" id="dashboardSearch" placeholder="Search metrics (e.g. Revenue)...">
+    </div>
+
+    <div class="user-profile">
+        <i class='bx bx-moon theme-toggle' id="themeIcon"></i>
+        
+        <i class='bx bx-bell'></i>
+        
+        <img src="https://via.placeholder.com/40" alt="Profile">
+    </div>
+</header>
+
+            <section class="stats-grid" id="statsGrid">
+                </section>
+
+            <div class="chart-container">
+                <h3>Revenue Overview (2026)</h3>
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
